@@ -72,22 +72,16 @@ while running:
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
                 rotation_y += 1
-                print(rotation_y)
             elif event.key == pygame.K_RIGHT:
                 rotation_y -= 1
-                print(rotation_y)
             elif event.key == pygame.K_UP:
                 rotation_x += 1
-                print(rotation_x)
             elif event.key == pygame.K_DOWN:
                 rotation_x -= 1
-                print(rotation_x)
             elif event.key == pygame.K_PLUS:
                 zoom += 0.1
-                print(zoom)
             elif event.key == pygame.K_MINUS:
                 zoom -= 0.1
-                print(zoom)
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
     
@@ -97,7 +91,6 @@ while running:
         for y in range(HEIGHT):
             glColor3ub(*mandelbrot_data[x, y, :])
             glVertex3f(x, y, 0)
-            print(x,y)
     glEnd()
 
     pygame.display.flip()
