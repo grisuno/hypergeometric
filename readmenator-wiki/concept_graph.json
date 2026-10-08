@@ -1,0 +1,55 @@
+{
+  "concepts": [
+    {
+      "name": "mandelbrot",
+      "files": [
+        "GLMandelbrot.py",
+        "mandelbrot.py"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "draw",
+      "files": [
+        "GLMandelbrot.py",
+        "hypercircle.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "generate",
+      "files": [
+        "circle.py",
+        "hypercircle.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "params",
+      "files": [
+        "circle.py",
+        "hypercircle.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "valid",
+      "files": [
+        "circle.py",
+        "hypercircle.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [],
+  "dialectic": [
+    "Thesis: `generate` centralizes 2 files; Antithesis: `params` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `generate` centralizes 2 files; Antithesis: `valid` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `params` centralizes 2 files; Antithesis: `valid` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?"
+  ]
+}
