@@ -20,7 +20,7 @@
   - `draw_hypergeometric_shape` (function, line 20) `def draw_hypergeometric_shape(a, b, z, angle, num_points)`
 
 ## hypermandala.py
-- Layer: utility
+- Layer: data_access
 - Language: py
 
 ## main.py

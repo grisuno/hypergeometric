@@ -11,7 +11,7 @@
 
 **Total Files Parsed:** 6 | **Total Symbols Extracted:** 7 | **Total Imports:** 22
 
-<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:1e0fd0b | date:2026-07-18 -->
+<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:05a4468 | date:2026-07-18 -->
 
 
 ## Table of Contents
@@ -24,13 +24,12 @@
 6. [Hotspot Analysis](#hotspot-analysis)
 7. [Change Impact Analysis](#change-impact-analysis)
 8. [Suggested Linting Rules](#suggested-linting-rules)
-9. [Concept Graph](#concept-graph)
-10. [Orphans](#orphans)
-11. [Query Recipes](#query-recipes)
-12. [Structural Knowledge Map](#structural-knowledge-map)
-13. [UML Class Diagram](#uml-class-diagram)
-14. [Code Property Graph](#code-property-graph)
-15. [Architecture Reference](#architecture-reference)
+9. [Orphans](#orphans)
+10. [Query Recipes](#query-recipes)
+11. [Structural Knowledge Map](#structural-knowledge-map)
+12. [UML Class Diagram](#uml-class-diagram)
+13. [Code Property Graph](#code-property-graph)
+14. [Architecture Reference](#architecture-reference)
     - [PY (6 files)](#py-6-files)
 
 ---
@@ -67,16 +66,20 @@ Auto-detected from path patterns, naming conventions, and imported frameworks.
 
 | Layer | Files |
 |-------|-------|
-| utility | 6 |
+| utility | 5 |
+| data_access | 1 |
 
 ### utility
 
 - `GLMandelbrot.py` (py, 1 symbols)
 - `circle.py` (py, 1 symbols)
 - `hypercircle.py` (py, 2 symbols)
-- `hypermandala.py` (py, 0 symbols)
 - `main.py` (py, 1 symbols)
 - `mandelbrot.py` (py, 2 symbols)
+
+### data_access
+
+- `hypermandala.py` (py, 0 symbols)
 
 ---
 
@@ -133,28 +136,6 @@ Files ranked by combined complexity (symbol count) and centrality (connection co
 | `hypermandala.py` | 0.000 | 0.833 | 0.500 | 0 | 5 |
 | `main.py` | 0.500 | 0.500 | 0.500 | 1 | 3 |
 | `mandelbrot.py` | 1.000 | 0.333 | 0.600 | 2 | 2 |
-
----
-
-## Concept Graph
-
-Semantic second-brain layer: nouns are concept nodes, verbs are edges. Each noun maps atomically to a file set (EXTRACTED); each verb aggregates structural imports, calls, and inherits into consumes, invokes, extends, depends_on, or bridges (INFERRED).
-
-**5 concepts, 0 relations.**
-
-| Concept | Files | Mentions |
-|---------|-------|----------|
-| `mandelbrot` | 2 | 4 |
-| `draw` | 2 | 2 |
-| `generate` | 2 | 2 |
-| `params` | 2 | 2 |
-| `valid` | 2 | 2 |
-
-### Dialectic Prompts
-
-- Thesis: `generate` centralizes 2 files; Antithesis: `params` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `generate` centralizes 2 files; Antithesis: `valid` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `params` centralizes 2 files; Antithesis: `valid` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
 
 ---
 
